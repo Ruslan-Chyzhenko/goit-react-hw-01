@@ -1,5 +1,5 @@
 // src/components/App.jsx
-import Profile from "./Profile";
+import Profile from "./components/Profile";
 import userData from "../userData.json";
 
 const App = () => {
