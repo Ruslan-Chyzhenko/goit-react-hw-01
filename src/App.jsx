@@ -1,6 +1,8 @@
 // src/components/App.jsx
-import Profile from "./components/Profile";
-import userData from "../userData.json";
+// import Profile from "./components/Profile";
+import { Section, Container, Heading, Profile } from "components";
+
+import userData from "../src/data/userData.json";
 
 const App = () => {
   return (
