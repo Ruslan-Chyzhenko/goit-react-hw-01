@@ -1,28 +1,26 @@
-// src/components/Profile.jsx
+// src/components/Profile/Profile.jsx
 
 export const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
-      </div>
-      <ul>
-        <li>
+    <div className="profile">
+      <img src={image} alt="User avatar" className="profile-avatar" />
+      <p className="profile-name">{name}</p>
+      <p className="profile-tag">@{tag}</p>
+      <p className="profile-location">{location}</p>
+      <div className="profile-stats">
+        <div className="profile-stat">
           <span>Followers</span>
           <span>{stats.followers}</span>
-        </li>
-        <li>
+        </div>
+        <div className="profile-stat">
           <span>Views</span>
           <span>{stats.views}</span>
-        </li>
-        <li>
+        </div>
+        <div className="profile-stat">
           <span>Likes</span>
           <span>{stats.likes}</span>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 };

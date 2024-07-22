@@ -1,9 +1,9 @@
-// src/components/FriendList.jsx
+// src/components/FriendList/FriendList.jsx
 import FriendListItem from "./components/FriendListItem";
 
 const FriendList = ({ friends }) => {
   return (
-    <ul>
+    <ul className="friend-list">
       {friends.map((friend) => (
         <li key={friend.id}>
           <FriendListItem

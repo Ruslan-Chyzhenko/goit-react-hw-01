@@ -1,0 +1,60 @@
+/* src/components/Profile/Profile.module.css */
+.profile {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.profile-avatar {
+  border-radius: 50%;
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.profile-tag {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.profile-location {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  background-color: #f9f9f9;
+}
+
+.profile-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-stat span:first-child {
+  font-size: 14px;
+  color: #999;
+}
+
+.profile-stat span:last-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}

@@ -1,14 +1,13 @@
-// src/components/App.jsx
-// import Profile from "./components/Profile";
-
-import Profile from "./Profile";
-import FriendList from "./FriendList";
-import Section from "./Section";
-import Container from "./Container";
-import Heading from "./Heading";
+import Profile from "./Profile/Profile";
+import FriendList from "./FriendList/FriendList";
+import TransactionHistory from "./TransactionHistory/TransactionHistory";
+import Section from "./Section/Section";
+import Container from "./Container/Container";
+import Heading from "./Heading/Heading";
 
 import userData from "../src/data/userData.json";
 import friends from "../src/data/friends.json";
+import transactions from "../transactions.json";
 
 const App = () => {
   return (
@@ -25,6 +24,12 @@ const App = () => {
         <Heading title="Task 2 Freunds" bottom />
         <>
           <FriendList friends={friends} />
+        </>
+        <>
+          <Heading title="Task 3 Transactions" bottom />
+        </>
+        <>
+          <TransactionHistory items={transactions} />
         </>
       </Container>
     </Section>
