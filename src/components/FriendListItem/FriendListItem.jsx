@@ -1,13 +1,13 @@
 // src/components/FriendListItem/FriendListItem.jsx
 import PropTypes from "prop-types";
-import css from "../FriendListItem/FriendListItem.module.css";
+import css from "./FriendListItem.module.css";
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <div>
       <img src={avatar} alt={`${name}'s avatar`} width="48" />
       <p>{name}</p>
-      <p className={isOnline ? "status online" : "status offline"}>
+      <p className={css.isOnline ? { statusOnline } : { statusOffline }}>
         {isOnline ? "Online" : "Offline"}
       </p>
     </div>

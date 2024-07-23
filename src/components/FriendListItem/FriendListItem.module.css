@@ -1,8 +1,8 @@
 /* src/components/FriendListItem/FriendListItem.module.css */
-.status.online {
+.statusOnline {
   color: green;
 }
 
-.status.offline {
+.statusOffline {
   color: red;
 }

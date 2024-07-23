@@ -1,25 +1,25 @@
 // src/components/Profile/Profile.jsx
 // import "../Profile/Profile.module.css";
 import PropTypes from "prop-types";
-import css from "../Profile/Profile.module.css";
+import css from "./Profile.module.css";
 
 export const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div className="profile">
-      <img src={image} alt="User avatar" className="profile-avatar" />
-      <p className="profile-name">{name}</p>
-      <p className="profile-tag">@{tag}</p>
-      <p className="profile-location">{location}</p>
-      <div className="profile-stats">
-        <div className="profile-stat">
+    <div className={css.profile}>
+      <img src={image} alt="User avatar" className={css.profileAvatar} />
+      <p className={css.profileName}>{name}</p>
+      <p className={css.profileTag}>@{tag}</p>
+      <p className={css.profileLocation}>{location}</p>
+      <div className={css.profileStats}>
+        <div className={css.profileStat}>
           <span>Followers</span>
           <span>{stats.followers}</span>
         </div>
-        <div className="profile-stat">
+        <div className={css.profileStat}>
           <span>Views</span>
           <span>{stats.views}</span>
         </div>
-        <div className="profile-stat">
+        <div className={css.profileStat}>
           <span>Likes</span>
           <span>{stats.likes}</span>
         </div>
