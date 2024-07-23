@@ -1,4 +1,4 @@
-import style from "./Section.module.css";
+import style from "../Section/Section.module.css";
 
 export const Section = ({ children }) => {
   return <section className={style.section}>{children}</section>;

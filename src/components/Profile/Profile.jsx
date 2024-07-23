@@ -1,4 +1,5 @@
 // src/components/Profile/Profile.jsx
+import "../Profile/Profile.module.css";
 
 export const Profile = ({ name, tag, location, image, stats }) => {
   return (
