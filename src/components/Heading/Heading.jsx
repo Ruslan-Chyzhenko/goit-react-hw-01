@@ -13,3 +13,5 @@ export const Heading = ({ title, top, bottom }) => {
     </h2>
   );
 };
+
+export default Heading;
